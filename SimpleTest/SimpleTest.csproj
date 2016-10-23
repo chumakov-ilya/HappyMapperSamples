@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{80FA984D-EA35-4B5A-BABD-82E1214C2E08}</ProjectGuid>
+    <ProjectGuid>{E89C6318-ACA5-4D39-92B7-49EF68F51036}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HighloadTest</RootNamespace>
-    <AssemblyName>HighloadTest</AssemblyName>
+    <RootNamespace>SimpleTest</RootNamespace>
+    <AssemblyName>SimpleTest</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -72,29 +72,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateClassesAndMappings.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CreateClassesAndMappings.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GlobalSettings.cs" />
-    <Compile Include="PostfixHelper_Tests.cs" />
+    <Compile Include="Mapper_Simple_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="CreateClassesAndMappings.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CreateClassesAndMappings.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HighloadTest.Tools\HighloadTest.Tools.csproj">
-      <Project>{73613a5e-546e-4678-85b3-ff9cf40f77d8}</Project>
-      <Name>HighloadTest.Tools</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
