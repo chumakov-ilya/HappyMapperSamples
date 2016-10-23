@@ -49,6 +49,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CreateClassesAndMappings.tt</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSettings.cs" />
     <Compile Include="PostfixHelper_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -2,8 +2,9 @@
 
 
 using System;
+using HighloadTest;
 
-namespace T4.Tests
+namespace HighloadTest
 {
 	public class Src_0
 	{
@@ -31,26 +32,6 @@ namespace T4.Tests
 	}
 
 	public class Dest_2
-	{
-		public String MyProperty { get; set; }
-	}
-
-	public class Src_3
-	{
-		public String MyProperty { get; set; }
-	}
-
-	public class Dest_3
-	{
-		public String MyProperty { get; set; }
-	}
-
-	public class Src_4
-	{
-		public String MyProperty { get; set; }
-	}
-
-	public class Dest_4
 	{
 		public String MyProperty { get; set; }
 	}

@@ -20,7 +20,7 @@ namespace HighloadTest.Tools
         {
             var array = new string[count];
 
-            for (int i = 0; i < count; i++)
+            for (int i = 1; i <= count; i++)
             {
                 array[i] = i.ToString();
             }
