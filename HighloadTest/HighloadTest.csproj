@@ -72,13 +72,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassPrinter_SmokeTests.cs" />
     <Compile Include="CreateClassesAndMappings.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CreateClassesAndMappings.tt</DependentUpon>
     </Compile>
-    <Compile Include="GlobalSettings.cs" />
-    <Compile Include="ClassPrinter_SmokeTests.cs" />
+    <Compile Include="Highload_SmokeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

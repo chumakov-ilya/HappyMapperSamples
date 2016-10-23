@@ -19,7 +19,9 @@ using HappyMapper;
 namespace HighloadTest
 {
 	<# 
-        var namePairs = ClassPrinter.PrintClasses(this, 3);
+        int pairCount = 1;
+
+        var namePairs = ClassPrinter.PrintClasses(this, pairCount);
         MapPrinter.PrintMaps(this, namePairs);
 	#>
 }
