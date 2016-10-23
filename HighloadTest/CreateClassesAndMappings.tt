@@ -1,0 +1,26 @@
+﻿<#@ template debug="True" #>
+<#@ output extension="cs" #>
+
+<#@ Assembly Name="System.Core.dll" #>
+<#@ Assembly Name="$(TargetDir)HighloadTest.Tools.dll" #>
+
+<#@ import namespace="System" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="HighloadTest" #>
+<#@ import namespace="HighloadTest.Tools" #>
+
+using System;
+
+namespace T4.Tests
+{
+	<# 
+	    int pairCount = 5;
+        ClassPrinter.PrintClasses(this, 5);
+	#>
+}
+
+ <#+ 
+
+ #>
