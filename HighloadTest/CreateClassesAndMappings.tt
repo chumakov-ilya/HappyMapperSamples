@@ -1,4 +1,4 @@
-﻿<#@ template debug="True" #>
+﻿<#@ template debug="false" #>
 <#@ output extension="cs" #>
 
 <#@ Assembly Name="System.Core.dll" #>
@@ -19,7 +19,7 @@ using HappyMapper;
 namespace HighloadTest
 {
 	<# 
-        int pairCount = 1;
+        int pairCount = 100;
 
         var namePairs = ClassPrinter.PrintClasses(this, pairCount);
         MapPrinter.PrintMaps(this, namePairs);

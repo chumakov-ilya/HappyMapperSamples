@@ -15,5 +15,14 @@ namespace HighloadTest.Tools
             replica.MyProperty = DateTime.Now.ToLongDateString();
             return replica;
         }
+
+        public static void Compare(dynamic src, dynamic dest)
+        {
+            bool areEqual = true;
+
+            areEqual = areEqual && src.MyProperty == dest.MyProperty;
+            
+            if (!areEqual) throw new Exception("Inequality!");
+        }
     }
 }

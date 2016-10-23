@@ -35,6 +35,7 @@ namespace HighloadTest.Tools
                 string destVarName = pair.DestName.ToLower();
                 text.WriteLine($"var {srcVarName} = Sample.Init(new {pair.SrcName}());");
                 text.WriteLine($"var {destVarName} = mapper.Map<{pair.DestName}>({srcVarName});");
+                text.WriteLine($"Sample.Compare({srcVarName}, {destVarName});");
                 text.WriteLine(Environment.NewLine);
             }
 
