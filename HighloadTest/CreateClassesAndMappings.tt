@@ -13,12 +13,14 @@
 <#@ import namespace="HighloadTest.Tools" #>
 
 using System;
-using HighloadTest;
+using HighloadTest.Tools;
+using HappyMapper;
 
 namespace HighloadTest
 {
 	<# 
-        ClassPrinter.PrintClasses(this, GlobalSettings.PairCount);
+        var namePairs = ClassPrinter.PrintClasses(this, 3);
+        MapPrinter.PrintMaps(this, namePairs);
 	#>
 }
 

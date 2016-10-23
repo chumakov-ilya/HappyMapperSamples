@@ -6,14 +6,18 @@ namespace HighloadTest.Tools
 {
     public class ClassPrinter
     {
-        public static void PrintClasses(dynamic text, int pairCount)
+        public static List<NamePair> PrintClasses(dynamic text, int pairCount)
         {
+            var pairs = new List<NamePair>();
             var postfixes = CreatePostfixes(pairCount);
 
             for (int i = 0; i < pairCount; i++)
             {
-                PrintClassPair(text, postfixes[i]);
+                var pair = PrintClassPair(text, postfixes[i]);
+                pairs.Add(pair);
             }
+
+            return pairs;
         }
 
         private static string[] CreatePostfixes(int count)
@@ -22,24 +26,26 @@ namespace HighloadTest.Tools
 
             for (int i = 1; i <= count; i++)
             {
-                array[i] = i.ToString();
+                array[i - 1] = i.ToString();
             }
 
             return array;
         }
 
-        public static void PrintClassPair(dynamic text, string postfix)
+        public static NamePair PrintClassPair(dynamic text, string postfix)
         {
             string src = "Src_" + postfix;
             string dest = "Dest_" + postfix;
 
             PrintClass(text, src);
             PrintClass(text, dest);
+
+            return new NamePair() { SrcName = src, DestName = dest };
         }
 
         public static void PrintClass(dynamic text, string className)
         {
-            var type = typeof (Sample);
+            var type = typeof(Sample);
 
             text.PushIndent("\t");
             text.WriteLine("public class " + className);

@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MapPrinter.cs" />
+    <Compile Include="NamePair.cs" />
     <Compile Include="Sample.cs" />
     <Compile Include="ClassPrinter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -78,7 +78,7 @@
       <DependentUpon>CreateClassesAndMappings.tt</DependentUpon>
     </Compile>
     <Compile Include="GlobalSettings.cs" />
-    <Compile Include="PostfixHelper_Tests.cs" />
+    <Compile Include="ClassPrinter_SmokeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
