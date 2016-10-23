@@ -9,6 +9,11 @@ namespace HighloadTest.Tools
     public class Sample
     {
         public string MyProperty { get; set; }
-        
+
+        public static dynamic Init(dynamic replica)
+        {
+            replica.MyProperty = DateTime.Now.ToLongDateString();
+            return replica;
+        }
     }
 }
